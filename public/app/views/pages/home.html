@@ -1,0 +1,9 @@
+<div>
+    <p>This is a simple app allows you to upload a file and extract some meta data from it. </p>
+    <form ng-submit = 'main.uploadFile()' id="file-form" enctype="multipart/form-data">
+		<input type="file" name="the-file" />
+		<input type="submit" value="Upload" />
+	</form>
+    
+    <p>Your file size is: {{main.fileData}}</p>
+</div>
